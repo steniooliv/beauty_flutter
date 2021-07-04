@@ -1,4 +1,5 @@
 <p align="center">
+  <img src="https://github.com/steniooliv/beauty_flutter/blob/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width=100 />
   <h1 align="center">Beauty<h1>
 </p>
 
