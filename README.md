@@ -1,8 +1,11 @@
 <p align="center">
-  <img src="https://github.com/steniooliv/beauty_flutter/blob/main/assets/images/cover.png?raw=true" width=400 alt="Modern Calc">
   <h1 align="center">Beauty<h1>
 </p>
 
+### Youtube Vídeo:
+    
+[![](https://img.youtube.com/vi/ylRt33QEpdY/0.jpg)](https://www.youtube.com/watch?v=ylRt33QEpdY)
+    
 [![Stenio](https://img.shields.io/badge/steniooliv-in-%230072b1)](https://www.linkedin.com/in/steniooliv)
 
 ## About
