@@ -26,7 +26,7 @@ class _RecoveryPasswordPageState extends State<RecoveryPasswordPage> {
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   var password;
-  var password_confirmation;
+  var passwordConfirmation;
 
   @override
   void initState() {
@@ -117,7 +117,7 @@ class _RecoveryPasswordPageState extends State<RecoveryPasswordPage> {
                                           keyboardType: TextInputType.text,
                                           obscureText: true,
                                           onChanged: (value) =>
-                                              {password_confirmation = value},
+                                              {passwordConfirmation = value},
                                           validator: (value) =>
                                               InputTextValidator()
                                                   .validatePassword(value!),
@@ -140,7 +140,7 @@ class _RecoveryPasswordPageState extends State<RecoveryPasswordPage> {
                                                   if (_formKey.currentState!
                                                       .validate()) {
                                                     if (password ==
-                                                        password_confirmation) {
+                                                        passwordConfirmation) {
                                                       controller.userModel
                                                           .password = password;
                                                       controller.saveUser();
