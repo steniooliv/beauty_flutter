@@ -98,6 +98,8 @@ class _LoginPageState extends State<LoginPage> {
                                     child: Column(
                                       children: [
                                         CustomInputTextWidget(
+                                          keyboardType:
+                                              TextInputType.emailAddress,
                                           obscureText: false,
                                           onChanged: (value) => {email = value},
                                           validator: (value) =>
@@ -111,6 +113,7 @@ class _LoginPageState extends State<LoginPage> {
                                           height: 20,
                                         ),
                                         CustomInputTextWidget(
+                                          keyboardType: TextInputType.text,
                                           obscureText: true,
                                           onChanged: (value) =>
                                               {password = value},

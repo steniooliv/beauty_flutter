@@ -11,6 +11,7 @@ class CustomInputTextWidget extends StatelessWidget {
     required this.labelText,
     required this.validator,
     required this.obscureText,
+    required this.keyboardType,
   }) : super(key: key);
 
   final TextEditingController controller;
@@ -19,10 +20,12 @@ class CustomInputTextWidget extends StatelessWidget {
   final String labelText;
   final String? Function(String?) validator;
   final bool obscureText;
+  final TextInputType keyboardType;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      keyboardType: keyboardType,
       obscureText: obscureText,
       textInputAction: TextInputAction.next,
       validator: validator,
