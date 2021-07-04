@@ -99,6 +99,7 @@ class _RecoveryPasswordPageState extends State<RecoveryPasswordPage> {
                                     child: Column(
                                       children: [
                                         CustomInputTextWidget(
+                                          obscureText: true,
                                           onChanged: (value) =>
                                               {password = value},
                                           validator: (value) =>
@@ -112,6 +113,7 @@ class _RecoveryPasswordPageState extends State<RecoveryPasswordPage> {
                                           height: 20,
                                         ),
                                         CustomInputTextWidget(
+                                          obscureText: true,
                                           onChanged: (value) =>
                                               {password_confirmation = value},
                                           validator: (value) =>

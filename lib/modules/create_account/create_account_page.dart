@@ -101,6 +101,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                                     child: Column(
                                       children: [
                                         CustomInputTextWidget(
+                                          obscureText: false,
                                           onChanged: (value) => {name = value},
                                           validator: (value) =>
                                               InputTextValidator()
@@ -113,6 +114,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                                           height: 20,
                                         ),
                                         CustomInputTextWidget(
+                                          obscureText: false,
                                           onChanged: (value) => {email = value},
                                           validator: (value) =>
                                               InputTextValidator()
@@ -125,6 +127,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                                           height: 20,
                                         ),
                                         CustomInputTextWidget(
+                                          obscureText: true,
                                           onChanged: (value) =>
                                               {password = value},
                                           validator: (value) =>

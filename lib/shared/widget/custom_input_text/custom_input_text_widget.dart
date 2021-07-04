@@ -10,6 +10,7 @@ class CustomInputTextWidget extends StatelessWidget {
     required this.focusNode,
     required this.labelText,
     required this.validator,
+    required this.obscureText,
   }) : super(key: key);
 
   final TextEditingController controller;
@@ -17,10 +18,12 @@ class CustomInputTextWidget extends StatelessWidget {
   final FocusNode focusNode;
   final String labelText;
   final String? Function(String?) validator;
+  final bool obscureText;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      obscureText: obscureText,
       textInputAction: TextInputAction.next,
       validator: validator,
       style: TextStyles.inputText,

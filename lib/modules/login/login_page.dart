@@ -98,6 +98,7 @@ class _LoginPageState extends State<LoginPage> {
                                     child: Column(
                                       children: [
                                         CustomInputTextWidget(
+                                          obscureText: false,
                                           onChanged: (value) => {email = value},
                                           validator: (value) =>
                                               InputTextValidator()
@@ -110,6 +111,7 @@ class _LoginPageState extends State<LoginPage> {
                                           height: 20,
                                         ),
                                         CustomInputTextWidget(
+                                          obscureText: true,
                                           onChanged: (value) =>
                                               {password = value},
                                           validator: (value) =>
