@@ -26,7 +26,7 @@ To run this project you must have an environment configured and enabled to run F
     
 ```
 # After the clone, enter the project folder
-cd modern_calc
+cd beauty_flutter
 
 # Install all dependencies
 flutter pub get
